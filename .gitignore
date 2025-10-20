@@ -42,4 +42,7 @@ testem.log
 Thumbs.db
 
 *storybook.log
-storybook-static
+# Storybook build output
+storybook-static/
+dist/storybook/
+.out/
