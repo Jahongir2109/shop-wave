@@ -25,10 +25,9 @@ export class AppMenu {
                 items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/'] }]
             },
             {
-                label: 'UI Components',
+                label: 'Manuals',
                 items: [
-                    { label: 'Button', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
-                    { label: 'Table', icon: 'pi pi-fw pi-table', routerLink: ['/uikit/table'] },
+                    { label: 'Countries', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/pages/countries'] },
                 ]
             },
         ];
