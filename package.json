@@ -64,10 +64,6 @@
     "typescript": "~5.8.3"
   },
   "lint-staged": {
-    "*.{ts,js}": [
-      "grep -v 'console\\.log' > tmp && mv tmp",
-      "eslint --fix",
-      "git add"
-    ]
+    "*.{ts,html,scss}": "eslint --fix"
   }
 }

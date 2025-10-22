@@ -66,6 +66,7 @@ productDialog: boolean = false;
     ngOnInit() {
         this.loadDemoData();
         console.log("test");
+        console.log("2");
     }
 
     loadDemoData() {
