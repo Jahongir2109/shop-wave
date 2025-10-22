@@ -5,7 +5,6 @@ import { Empty } from '../features/empty/empty';
 import { Countries } from '../features/country/ui/countries/countries';
 
 export default [
-    { path: 'documentation', component: Documentation },
     { path: 'crud', component: Crud },
     { path: 'countries', component: Countries },
     { path: 'empty', component: Empty },

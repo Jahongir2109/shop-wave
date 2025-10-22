@@ -5,6 +5,5 @@ import { FormLayoutDemo } from './formlayoutdemo';
 
 export default [
     { path: 'button', data: { breadcrumb: 'Button' }, component: ButtonDemo },
-    { path: 'formlayout', data: { breadcrumb: 'Form Layout' }, component: FormLayoutDemo },
     { path: '**', redirectTo: '/notfound' }
 ] as Routes;
