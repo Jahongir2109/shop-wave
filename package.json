@@ -9,7 +9,8 @@
     "format": "prettier --write \"**/*.{js,mjs,ts,mts,d.ts,html}\" --cache",
     "test": "ng test",
     "storybook": "ng run shop-wave:storybook",
-    "build-storybook": "ng run shop-wave:build-storybook"
+    "build-storybook": "ng run shop-wave:build-storybook",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -48,16 +49,23 @@
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "eslint-plugin-prettier": "^5.5.1",
     "eslint-plugin-storybook": "^9.1.13",
+    "husky": "^9.1.7",
     "jasmine-core": "~5.8.0",
     "karma": "~6.4.4",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "lint-staged": "^16.2.5",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
     "storybook": "^9.1.13",
     "tailwindcss": "^4.1.11",
     "typescript": "~5.8.3"
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "npm run lint:check"
+    ]
   }
 }
