@@ -65,7 +65,9 @@
   },
   "lint-staged": {
     "*.{ts,js}": [
-      "npm run lint:check"
+      "grep -v 'console\\.log' > tmp && mv tmp",
+      "eslint --fix",
+      "git add"
     ]
   }
 }
