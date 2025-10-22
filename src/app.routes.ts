@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 import { AppLayout } from './app/widgets/layout/ui/app.layout';
-import { Dashboard } from './app/features/dashboard/dashboard';
+import { Dashboard } from './app/widgets/dashboard/dashboard';
 import { Documentation } from './app/features/documentation/documentation';
-import { Landing } from './app/features/landing/landing';
+import { Landing } from './app/widgets/landing/landing';
 import { Notfound } from './app/features/notfound/notfound';
 
 export const appRoutes: Routes = [
@@ -18,6 +18,6 @@ export const appRoutes: Routes = [
     },
     { path: 'landing', component: Landing },
     { path: 'notfound', component: Notfound },
-    { path: 'auth', loadChildren: () => import('./app/features/auth/auth.routes') },
+    { path: 'auth', loadChildren: () => import('./app/widgets/auth/ui/auth.routes') },
     { path: '**', redirectTo: '/notfound' }
 ];

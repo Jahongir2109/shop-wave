@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 import { Documentation } from '../features/documentation/documentation';
-import { Crud } from '../features/crud/crud';
+import { Crud } from '../widgets/crud/crud';
 import { Empty } from '../features/empty/empty';
-import { Countries } from './country/ui/countries/countries';
+import { Countries } from '../features/country/ui/countries/countries';
 
 export default [
     { path: 'documentation', component: Documentation },

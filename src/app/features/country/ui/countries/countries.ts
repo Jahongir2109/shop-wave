@@ -1,4 +1,4 @@
-import { CountryService } from '@/entities/api/country.service';
+import { CountryService } from '@/features/country/api/country.service';
 import { Column, Country } from '@/entities/models';
 import { CommonModule } from '@angular/common';
 import { Component, signal, ViewChild } from '@angular/core';
