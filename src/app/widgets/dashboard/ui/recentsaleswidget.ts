@@ -3,7 +3,7 @@ import { RippleModule } from 'primeng/ripple';
 import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
 import { CommonModule } from '@angular/common';
-import { Product, ProductService } from '@/entities/api/product.service';
+import { Product, ProductService } from '@/shared/api/product.service';
 
 @Component({
     standalone: true,

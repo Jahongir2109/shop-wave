@@ -1,5 +1,5 @@
 import { CountryService } from '@/features/country/api/country.service';
-import { Column, Country } from '@/entities/models';
+import { Column, Country } from '@/shared/models';
 import { CommonModule } from '@angular/common';
 import { Component, signal, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
