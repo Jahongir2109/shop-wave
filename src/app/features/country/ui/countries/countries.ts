@@ -68,8 +68,14 @@ productDialog: boolean = false;
     }
 
     loadDemoData() {
-        this.countryService.getCountries().then((data) => {
-            this.countries.set(data);
+        this.countryService.getCountries().then((data:Country[]) => {
+            this.countries.set(data.map((a)=>{
+                return {
+                    name: a.name,
+                    code: a.code,
+                    id: this.createId()
+                }
+            }));
         });
 
         this.cols = [
