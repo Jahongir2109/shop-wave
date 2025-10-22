@@ -16,9 +16,9 @@ import { ToastModule } from 'primeng/toast';
 import { ToolbarModule } from 'primeng/toolbar';
 
 @Component({
-  selector: 'app-countries',
-  imports: [
-    CommonModule,
+    selector: 'app-countries',
+    imports: [
+        CommonModule,
         TableModule,
         FormsModule,
         ButtonModule,
@@ -30,13 +30,13 @@ import { ToolbarModule } from 'primeng/toolbar';
         InputIconModule,
         IconFieldModule,
         ConfirmDialogModule
-  ],
-  templateUrl: './countries.html',
-  styleUrl: './countries.scss',
-  providers: [MessageService,ConfirmationService,CountryService]
+    ],
+    templateUrl: './countries.html',
+    styleUrl: './countries.scss',
+    providers: [MessageService, ConfirmationService, CountryService]
 })
 export class Countries {
-productDialog: boolean = false;
+    productDialog: boolean = false;
 
     countries = signal<Country[]>([]);
 
@@ -57,7 +57,7 @@ productDialog: boolean = false;
         private countryService: CountryService,
         private messageService: MessageService,
         private confirmationService: ConfirmationService
-    ) {}
+    ) { }
 
     exportCSV() {
         this.dt.exportCSV();
@@ -68,8 +68,8 @@ productDialog: boolean = false;
     }
 
     loadDemoData() {
-        this.countryService.getCountries().then((data:Country[]) => {
-            this.countries.set(data.map((a)=>{
+        this.countryService.getCountries().then((data: Country[]) => {
+            this.countries.set(data.map((a) => {
                 return {
                     name: a.name,
                     code: a.code,
